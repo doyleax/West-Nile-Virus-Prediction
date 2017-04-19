@@ -1,0 +1,11 @@
+-- to add your work on top of any changes made to master files, without pushing your work to master
+-- do this before you push to master to avoid merge errors
+git pull --rebase origin
+
+-- push your changes to master
+git push origin
+
+-- add a file to the .gitignore file so it doesn't get tracked
+-- ex) rename the EDA.ipynb file to include your name, make any changes that you don't want reflected in the master
+-- replace [debug.log] with your filename
+echo [debug.log] >> .gitignore
